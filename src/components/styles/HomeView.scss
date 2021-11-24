@@ -1,0 +1,28 @@
+.home-view-container {
+  max-width: 100rem;
+  padding: 0 2rem 2rem;
+  background-color: #f2f2f2;
+
+  .home-view-header {
+    height: 100px;
+    width: 300px;
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .home-view-search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.5em;
+
+    .search-input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      width: 50%;
+    }
+  }
+}
