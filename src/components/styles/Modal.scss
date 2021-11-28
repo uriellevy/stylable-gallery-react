@@ -1,0 +1,35 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: calc(50% - 250px);
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+  // transform: translateX(-50%);
+
+  .modal-image {
+    z-index: 1000;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: translatey(-100px);
+  }
+}
+
+// @media (min-width: 768px) {
+//   .modal {
+//     left: calc(50% - 20rem);
+//     width: 40rem;
+//   }
+// }
