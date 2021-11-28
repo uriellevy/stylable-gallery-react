@@ -16,10 +16,19 @@ const HomeView = () => {
   // console.log(Object.keys(images));
   // // console.log(images);
   // console.log(Object.entries(images));
+  const closeModalHandler = () => {
+    setImageFromState("");
+  };
 
   return (
     <div>
-      {imageFromState && <Modal imageFromState={imageFromState} />}
+      {imageFromState && (
+        <Modal
+          imageFromState={imageFromState}
+          setImageFromState={setImageFromState}
+          closeModalHandler={closeModalHandler}
+        />
+      )}
       <div className="home-view-container">
         <h3 className="home-view-header">{texts.HOME_VIEW_HEADER}</h3>
         <div className="home-view-search">

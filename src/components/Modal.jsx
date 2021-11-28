@@ -1,17 +1,20 @@
 import React from "react";
 import "./styles/Modal.scss";
+import { ImCross } from "react-icons/im";
 
-const Modal = ({ imageFromState }) => {
+const Modal = ({ imageFromState, closeModalHandler }) => {
   return (
     <div>
       <div className="modal-backdrop" />
-      <div className="modal">
-        <img
-          src={imageFromState}
-          // style={{ display: imageFromState ? "block" : "none" }}
-          className="modal-image"
-        />
-      </div>
+      <button>
+        <ImCross className="cross-icon" onClick={closeModalHandler} />
+      </button>
+
+      <img
+        src={imageFromState}
+        // style={{ display: imageFromState ? "block" : "none" }}
+        className="modal-image"
+      />
     </div>
   );
 };
